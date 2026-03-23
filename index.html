@@ -1,240 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raja Ismail — Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+
+    <!-- ════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════ -->
     <header class="header">
-        <a href="#home" class="logo">Ismail
-            <span>Rafaquat</span>
-        </a>
-
+        <a href="#home" class="logo">Raja Ismail<span>.</span></a>
         <i class="bx bx-menu" id="menu-icon"></i>
-
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
             <a href="#services">Services</a>
-            <a href="#testimonails">Projects</a>
+            <a href="#personal-projects">Personal</a>
+            <a href="#company-projects">Company</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- ════════════════════════════════════════
+       HOME
+  ════════════════════════════════════════ -->
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, It's <span>Ismail</span></h1>
+            <div class="home-badge">Available for Work</div>
+            <h1>Hi, I'm <span>Ismail</span></h1>
             <h3 class="text-animation">I'm a <span></span></h3>
-            <p>I’m a full-stack engineer specializing in ABP.io and the .NET ecosystem. I design DB-first backends (schema-driven, optimized SQL) and build front ends in Angular, Blazor, and Vue.js; mobile apps in Flutter; and MetaTrader 5 (MQL5) EAs/indicators with robust backtesting and integrations. I also deliver Node.js services where they fit best (real-time, event-driven, or lightweight APIs). From data modeling to deployment, I ship secure, scalable software that turns real workflows into results.</p>
-
+            <p>
+                Full-stack engineer specializing in ABP.io and the .NET ecosystem. I design DB-first
+                backends with schema-driven, optimized SQL and build front-ends in Angular, Blazor,
+                and Vue.js — mobile apps in Flutter — and MetaTrader 5 (MQL5) Expert Advisors with
+                robust backtesting. From data modeling to deployment, I ship secure, scalable
+                software that turns real workflows into results.
+            </p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ismail-rafaquat-0a2901285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/IsmailRafaquat/IsmailRafaquat.git" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="https://www.instagram.com/ismail.rafaquat.756?igsh=MXIxdXY0MDU5ZXdsYg==" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-                <a href="https://www.facebook.com/share/15vzEq348E/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/ismail-rafaquat-0a2901285" target="_blank" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+                <a href="https://github.com/IsmailRafaquat/IsmailRafaquat.git" target="_blank" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.instagram.com/ismail.rafaquat.756" target="_blank" aria-label="Instagram">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="https://www.facebook.com/share/15vzEq348E/" target="_blank" aria-label="Facebook">
+                    <i class="bx bxl-facebook"></i>
+                </a>
             </div>
-
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="mailto:ismail.rafaquat@email.com" class="btn btn-primary">
+                    <i class="bx bx-briefcase"></i>Hire Me
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="bx bx-envelope"></i>Contact
+                </a>
             </div>
         </div>
+
         <div class="home-img">
-            <img src="profile.jpeg" alt="">
+            <div class="home-img-wrap">
+                <img src="profile.jpeg" alt="Ismail" />
+            </div>
         </div>
     </section>
 
+    <!-- ════════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════════ -->
     <section class="education" id="education">
-        <h2 class="heading">Education</h2>
+        <h2 class="section-heading">Education</h2>
 
         <div class="timeline-items">
+
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                    <div class="timeline-date">2020 - 2024</div>
-                
+                <div class="timeline-date">2020 — 2024</div>
                 <div class="timeline-content">
                     <h3>Pir Mehr Ali Shah Arid Agriculture University, Rawalpindi (BIIT)</h3>
-                    <p>I completed my education in Computer Science from ARID University, Rawalpindi. This esteemed institution provided me with a strong foundation in programming, software development, and problem-solving skills. The Bachelor of Science in Computer Science (BSCS) program at ARID University emphasized practical learning and innovative thinking, preparing me for a successful career in the ever-evolving field of technology.</p>
-                </div>
-            </div>   
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2018 - 2020</div>
-                
-                    <div class="timeline-content">
-                        <h3>PAEC Nilore Model College</h3>
-                        <p>I completed my school education at PAEC Nilore Model College, where I focused on Computer Science. This experience gave me a solid understanding of the basics of the field, preparing me for further studies and my career in technology.</p>
-                    </div>
-                    
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2016 - 2018</div>
-                
-                <div class="timeline-content">
-                    <h3>PAEC Nilore Model College</h3>
-                    <p>I completed my college education in Computer Science from PAEC Nilore Model College. This esteemed institution provided me with a strong foundation in programming, software development, and problem-solving skills, preparing me for a successful career in the field of technology.</p>
+                    <p>
+                        Completed a Bachelor of Science in Computer Science (BSCS). The program emphasized
+                        practical learning, software engineering principles, data structures, algorithms, and
+                        modern development frameworks, building a strong foundation for a career in technology.
+                    </p>
                 </div>
             </div>
-                  
+
+            <!-- <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2018 — 2020</div>
+        <div class="timeline-content">
+          <h3>PAEC Nilore Model College — FSc (Intermediate)</h3>
+          <p>
+            Completed Intermediate education with a focus on Computer Science. Gained a solid
+            understanding of programming fundamentals, mathematics, and physics, forming the
+            academic base for further studies in computing.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2016 — 2018</div>
+        <div class="timeline-content">
+          <h3>PAEC Nilore Model College — Matriculation</h3>
+          <p>
+            Completed secondary education at PAEC Nilore Model College with Computer Science as a
+            major subject. Developed an early interest and competence in problem-solving and
+            logical thinking.
+          </p>
+        </div>
+      </div> -->
+
         </div>
     </section>
 
+    <!-- ════════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════════ -->
+    <section class="skills" id="skills">
+        <h2 class="section-heading">My <span>Skills</span></h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <div class="skill-category-title"><i class="bx bx-code-alt"></i>Front-End</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">Blazor</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <!-- <span class="skill-tag">JavaScript</span> -->
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <!-- <span class="skill-tag">Tailwind CSS</span> -->
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-title"><i class="bx bx-server"></i>Back-End</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">.NET / C#</span>
+                    <span class="skill-tag">ABP.io</span>
+                    <span class="skill-tag">ASP.NET MVC</span>
+                    <!-- <span class="skill-tag">Node.js</span> -->
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">SignalR</span>
+                    <span class="skill-tag">Entity Framework</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-title"><i class="bx bx-data"></i>Database</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Schema Design</span>
+                    <span class="skill-tag">Query Optimization</span>
+                    <span class="skill-tag">Stored Procedures</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-title"><i class="bx bx-mobile-alt"></i>Mobile</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <!-- <span class="skill-tag">iOS</span> -->
+                    <!-- <span class="skill-tag">Android</span> -->
+                    <span class="skill-tag">REST Integration</span>
+                    <span class="skill-tag">State Management</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-title"><i class="bx bx-trending-up"></i>Trading / Fintech</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">MQL5</span>
+                    <span class="skill-tag">MetaTrader 5</span>
+                    <span class="skill-tag">Expert Advisors</span>
+                    <span class="skill-tag">Backtesting</span>
+                    <span class="skill-tag">Strategy Design</span>
+                    <!-- <span class="skill-tag">Python</span> -->
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-category-title"><i class="bx bx-wrench"></i>Tools &amp; DevOps</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git / GitHub</span>
+                    <!-- <span class="skill-tag">Docker</span> -->
+                    <span class="skill-tag">IIS</span>
+                    <span class="skill-tag">Visual Studio</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Proficiency Bars -->
+        <div class="skill-bars-wrap">
+            <div class="skill-bar-list">
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>.NET / C# / ABP.io</span><span>90%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>Angular / Blazor</span><span>85%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>Flutter / Dart</span><span>80%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>SQL &amp; Database Design</span><span>88%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:88%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header"><span>MQL5 / MetaTrader 5</span><span>75%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" style="width:75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       SERVICES
+  ════════════════════════════════════════ -->
     <section class="services" id="services">
-        <h2 class="heading">Services</h2>
+        <h2 class="section-heading">Services</h2>
 
-        <div class="services-container">
+        <div class="services-grid">
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Full Stack Developer</h4>
-                    <p>Skilled in both front-end and back-end development, capable of building complete web applications. Working with abp.io , utilizing technologies such as Angular, Blazor , HTML, CSS, JavaScript, and server-side frameworks like .NET MVC, with a strong focus on creating seamless, scalable, and efficient web solutions.</p>
-                </div>
+            <div class="service-card">
+                <i class="bx bx-layer service-icon"></i>
+                <h4>Full Stack Development</h4>
+                <p>End-to-end web application development using ABP.io, Angular, Blazor, and .NET MVC.
+                    Scalable architectures, clean APIs, and polished user interfaces — all in one package.</p>
             </div>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>App Developer</h4>
-                    <p>Experienced in developing mobile applications using Flutter and Dart for both iOS and Android platforms. Skilled in building high-performance, responsive apps with a focus on smooth user interfaces and seamless functionality across devices.</p>
-                </div>
+            <div class="service-card">
+                <i class="bx bx-mobile service-icon"></i>
+                <h4>Mobile App Development</h4>
+                <p>High-performance Android applications built with Flutter and Dart. Smooth,
+                    responsive UIs with seamless back-end integration and optimized performance across devices.</p>
             </div>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI Design</h4>
-                    <p>Experienced in creating user-friendly and visually appealing interfaces. Focused on improving user experience by designing intuitive layouts, navigation, and ensuring consistency across digital platforms.</p>
-                </div>
+            <div class="service-card">
+                <i class="bx bx-palette service-icon"></i>
+                <h4>UI / UX Design</h4>
+                <p>User-centered interface design that balances aesthetics and functionality. Intuitive
+                    navigation, consistent visual systems, and designs that genuinely improve the user experience.</p>
             </div>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Software Tester</h4>
-                    <p>Experienced in testing mobile and web applications to ensure high-quality performance and user satisfaction. Skilled in manual and automated testing techniques, identifying bugs, and ensuring that software meets all requirements and standards for functionality, usability, and security.</p>
+            <div class="service-card">
+                <i class="bx bx-trending-up service-icon"></i>
+                <h4>Trading Bots (MQL5)</h4>
+                <p>Custom Expert Advisors, indicators, and utilities for MetaTrader 5. Includes strategy
+                    design, tick-accurate backtesting, risk management, VPS-ready deployment, and Python integrations.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="bx bx-shield-check service-icon"></i>
+                <h4>Software Testing</h4>
+                <p>Manual and automated testing for web and mobile applications. Bug identification,
+                    regression testing, performance checks, and QA to ensure your software meets the highest standards.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <i class="bx bx-server service-icon"></i>
+                <h4>Backend &amp; API Development</h4>
+                <p>RESTful and real-time APIs built with .NET, Node.js, and SignalR. DB-first design with
+                    optimized queries, stored procedures, and secure, scalable server-side logic.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+       PERSONAL PROJECTS
+  ════════════════════════════════════════ -->
+    <section class="personal-projects" id="personal-projects">
+        <h2 class="section-heading">Personal <span>Projects</span></h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge">Personal</span>
+                    <div class="project-links">
+                        <a href="https://app.ismyr.org" target="_blank" class="project-link" title="GitHub">
+                            <i class="bx bx-link-external"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card-body">
+                    <h3>School Management System (EHub)</h3>
+                    <p>A comprehensive management solution for educational institutions. Handles challans,
+                        staff salary processing, attendance tracking, and student fee payments in a unified
+                        platform — designed to streamline administrative tasks and ensure financial accuracy.</p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Angular</span>
+                        <span class="tech-pill">CSS3</span>
+                        <span class="tech-pill">HTML5</span>
+                        <span class="tech-pill">.NET MVC</span>
+                        <span class="tech-pill">SQL Server</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge">Personal</span>
+                    <div class="project-links">
+                        <!-- <a href="https://github.com/IsmailRafaquat/IsmailRafaquat.git" target="_blank"
+                            class="project-link" title="GitHub">
+                            <i class="bx bxl-github"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="project-card-body">
+                    <h3>BIIT Quiz Competition</h3>
+                    <p>A tech-fest competition platform with MCQ rounds, timed programming challenges,
+                        random question shuffling, rapid-fire rounds, and a buzzer round where the fastest
+                        responder earns points.</p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Flutter</span>
+                        <span class="tech-pill">Dart</span>
+                        <span class="tech-pill">.NET MVC</span>
+                        <span class="tech-pill">SQL Server</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="testimonails" id="testimonails">
-        <div class="testimonials-box">
-            <h2 class="heading">Projects</h2>
+    <!-- ════════════════════════════════════════
+       COMPANY PROJECTS
+  ════════════════════════════════════════ -->
+    <section class="company-projects" id="company-projects">
+        <h2 class="section-heading">Company <span>Projects</span></h2>
 
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <h2>TRUEFIN.IO SUPPORT SYSTEM</h2>
-                    <div class="rating">
-                        <h3 class="golden-color">(Angular, CSS, HTML, .net MVC)</h3>
+        <div class="projects-grid">
+
+            <div class="project-card company-project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge company-badge">Client Work</span>
+                    <div class="project-links">
+                        <a href="https://truefin.io" target="_blank" class="project-link" title="Live Site">
+                            <i class="bx bx-link-external"></i>
+                        </a>
                     </div>
-                    <p>Implemented a robust support ticket system for Truefin.io, enabling seamless bug and issuse reporting. The system handles ticket creation with email notifications for users and admins, assigns tickets to agents, and notifies users upon resolution, ensuring efficient communication and issuse management.</p>
                 </div>
-
-                <div class="testimonial-item">
-                    <h2>TRADING BOT</h2>
-                    <div class="rating">
-                        <h3 class="golden-color">(MetaQuotes · MQL5)</h3>
+                <div class="project-card-body">
+                    <h3>Truefin.io Support System</h3>
+                    <p>A robust support ticket system for Truefin.io enabling seamless bug and issue reporting.
+                        Handles ticket creation with automated email notifications, agent assignment, and user
+                        resolution alerts — ensuring efficient communication and issue management at scale.</p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Angular</span>
+                        <span class="tech-pill">CSS3</span>
+                        <span class="tech-pill">HTML5</span>
+                        <span class="tech-pill">.NET MVC</span>
                     </div>
-                    <p>I build custom Expert Advisors, indicators, and utilities for MetaTrader 5 in MQL5, with Python integrations where needed. Scope includes strategy design, tick-accurate backtesting/optimization, robust risk & trade management, alerting/logging, and VPS-ready deployment.</p>
                 </div>
-
-
-
-                <div class="testimonial-item">
-                    <h2>SCHOOL MANAGEMENT SYSTEM</h2>
-                    <div class="rating">
-                        <h3 class="golden-color">(Angular, CSS, HTML, .net MVC)</h3>
+            </div>
+            <div class="project-card company-project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge company-badge">Client Work</span>
+                    <div class="project-links">
+                        <!-- <a href="https://truefin.io" target="_blank" class="project-link" title="Live Site">
+                            <i class="bx bx-link-external"></i>
+                        </a> -->
                     </div>
-                    <p>Introducing our Comprehensive System Management Solution for educational institutions! Manage challans, staff salaries, attendance, and student fee payments effortlessly in one platform. With a user-friendly interface, it simplifies administrative tasks, ensures accuracy, and saves time, making it ideal for schools, colleges, and universities</p>
                 </div>
-
-                <div class="testimonial-item">
-                    <h2>MOTIVATION QUOTES</h2>
-                    <div class="rating">
-                        <h3 class="golden-color">(Flutter, Dart, .net MVC, SQL)</h3>
+                <div class="project-card-body">
+                    <h3>MetaTrader 5 Trading Bot</h3>
+                    <p>Custom Expert Advisor built in MQL5 with Python integrations. Features include
+                        strategy design, tick-accurate backtesting and optimization, robust risk and trade
+                        management, alerting/logging systems, and VPS-ready deployment.</p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">MQL5</span>
+                        <span class="tech-pill">MetaTrader 5</span>
                     </div>
-                    <p>Developed a motivational quotes app with a user-friendly interface, offering daily inspiration, quote sharing, and a curated, regularly updated library. Enabled users to save and submit quotes, showcasing skills in app development, content curation, UX design, and community engagement.</p>
                 </div>
-
-                <div class="testimonial-item">
-                    <h2>ENGLISH STORIES</h2>
-                    <div class="rating">
-                        <h3 class="golden-color">(Flutter, Dart, .net MVC, SQL)</h3>
+            </div>
+            <div class="project-card company-project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge company-badge">Client Work</span>
+                    <div class="project-links">
+                        <!-- Add live link here if needed -->
+                        <!-- <a href="https://your-tms-site.com" target="_blank" class="project-link" title="Live Site">
+                <i class="bx bx-link-external"></i>
+            </a> -->
                     </div>
-                    <p>Developed an innovative app delivering English stories with engaging audio-visual features and a diverse library of classics, fiction, and non-fiction. Designed an interactive storytelling experience to promote language learning and literary appreciation, showcasing expertise in app development and user experience design.</p>
                 </div>
-
-                <div class="testimonial-item">
-                    <h2>BIIT QUIZ COMPETITION</h2>
-                    <div class="rating">
-                        <h3 class="golden-color">(Flutter, Dart, .net MVC, SQL)</h3>
+                <div class="project-card-body">
+                    <h3>TMS - Ticket Management System</h3>
+                    <p>
+                        A ticket management system built for handling client issues related to TrueFin.io. Clients can
+                        create support tickets through the web portal, receive email notifications on ticket activity,
+                        and stay updated through live notifications powered by SignalR. The system is designed for
+                        efficient issue tracking, faster response times, and smooth communication between clients and
+                        support teams.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Angular</span>
+                        <span class="tech-pill">.NET</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">SignalR</span>
+                        <span class="tech-pill">SMTP</span>
                     </div>
-                    <p>The tech-fest event challenges participants' technical skills, knowledge, and speed through diverse rounds, including MCQs, timed programming challenges, random-order question shuffling, rapid-fire rounds for quick thinking, and buzzer rounds where the fastest responder answers.</p>
+                </div>
+            </div>
+            <div class="project-card company-project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge company-badge">Client Work</span>
+                    <div class="project-links">
+                        <!-- Add live link here if needed -->
+                    </div>
+                </div>
+                <div class="project-card-body">
+                    <h3>Society Billing Management System</h3>
+                    <p>
+                        A billing management system developed for residential societies to handle and streamline monthly
+                        billing operations.
+                        The system helps society management generate bills, manage resident records, track payments,
+                        monitor outstanding dues,
+                        and maintain accurate financial records for smooth community administration.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Angular</span>
+                        <span class="tech-pill">.NET</span>
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">SMTP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card company-project-card">
+                <div class="project-card-header">
+                    <span class="project-type-badge company-badge">Company Profile</span>
+                    <div class="project-links">
+                        <a href="https://eruditesolutions.io/" target="_blank" rel="noopener noreferrer"
+                            class="project-link" title="Visit Company Profile">
+                            <i class="bx bx-link-external"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card-body">
+                    <h3>Erudite Solutions</h3>
+                    <p>
+                        A dedicated company profile website for Erudite Solutions, showcasing the company’s portfolio,
+                        detailed project case studies, team structure, services, expertise, and business presence.
+                        The platform serves as a central hub to present the company professionally and highlight its
+                        technical capabilities, completed work, and organizational strength.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Company Profile</span>
+                        <span class="tech-pill">Portfolio</span>
+                        <span class="tech-pill">Team Showcase</span>
+                        <span class="tech-pill">Case Studies</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ════════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════════ -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="section-heading">Contact <span>Me</span></h2>
 
-        <form id="contactForm">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" id="fullName" placeholder="Full Name" required>
-                    <input type="email" id="email" placeholder="Email" required>
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+                <h3 class="contact-info-title">Let's work <span>together</span></h3>
+                <p>Have a project in mind or want to discuss an opportunity? I'm always open to new
+                    challenges and collaborations. Drop me a message and I'll get back to you promptly.</p>
+                <div class="contact-detail">
+                    <i class="bx bx-map"></i>
+                    <span>Rawalpindi, Pakistan</span>
                 </div>
-                <div class="input-box">
-                    <input type="text" id="phone" placeholder="Phone Number" required>
-                    <input type="text" id="subject" placeholder="Subject" required>
+                <div class="contact-detail">
+                    <i class="bx bx-envelope"></i>
+                    <span>ismail.rafaquat@email.com</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="bx bxl-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/ismail-rafaquat-0a2901285" target="_blank">
+                        linkedin.com/in/ismail-rafaquat
+                    </a>
+                </div>
+                <div class="contact-detail">
+                    <i class="bx bxl-github"></i>
+                    <a href="https://github.com/IsmailRafaquat/IsmailRafaquat.git" target="_blank">
+                        github.com/IsmailRafaquat
+                    </a>
                 </div>
             </div>
-        
-            <div class="input-group-2">
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-        
+
+            <form class="contact-form" id="contactForm">
+                <div class="input-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required />
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="+92 300 0000000" />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Project Inquiry" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Tell me about your project…" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">
+                    <i class="bx bx-send"></i>Send Message
+                </button>
+            </form>
+
+        </div>
     </section>
 
+    <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/ismail-rafaquat-0a2901285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/IsmailRafaquat/IsmailRafaquat.git" target="_blank"><i class="bx bxl-github"></i></a>
-                <a href="https://www.instagram.com/ismail.rafaquat.756?igsh=MXIxdXY0MDU5ZXdsYg==" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-                <a href="https://www.facebook.com/share/15vzEq348E/" target="_blank"><i class="bx bxl-facebook"></i></a>
+        <a href="#home" class="footer-logo">Ismail<span>.</span></a>
+
+        <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#personal-projects">Personal Projects</a>
+            <a href="#company-projects">Company Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/ismail-rafaquat-0a2901285" target="_blank"><i
+                    class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/IsmailRafaquat/IsmailRafaquat.git" target="_blank"><i
+                    class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/ismail.rafaquat.756" target="_blank"><i
+                    class="bx bxl-instagram-alt"></i></a>
+            <a href="https://www.facebook.com/share/15vzEq348E/" target="_blank"><i class="bx bxl-facebook"></i></a>
         </div>
 
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-
-            <li>
-                <a href="#services">Services</a>
-            </li>
-
-            <li>
-                <a href="#">About Me</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-            <li>
-                <a href="#testimonails">Projects</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            @ Ismail Rafaquat | All Rights Reserved
-        </p>
+        <p class="footer-copy">&copy; 2025 <span>Ismail Rafaquat</span> — All Rights Reserved</p>
     </footer>
+
+    <!-- Script -->
     <script src="script.js"></script>
+
 </body>
+
 </html>
