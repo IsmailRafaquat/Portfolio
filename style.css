@@ -596,6 +596,64 @@ section {
 }
 
 /* ─────────────────────────────────────────
+   CLIENTS
+───────────────────────────────────────── */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.client-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 3.5rem 3rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+.client-card:hover {
+  border-color: rgba(0, 255, 238, 0.35);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px var(--accent-glow);
+}
+
+.client-icon {
+  font-size: 3.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+.client-count {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(0, 255, 238, 0.08);
+  border: 1px solid rgba(0, 255, 238, 0.2);
+  padding: 0.4rem 1rem;
+  border-radius: 10rem;
+  margin-bottom: 1.5rem;
+}
+.client-card h4 {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.client-card p {
+  font-size: 1.45rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ─────────────────────────────────────────
    PERSONAL PROJECTS
 ───────────────────────────────────────── */
 .personal-projects { background: var(--bg3); }
